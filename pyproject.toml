@@ -51,5 +51,5 @@ dependencies = [
 Documentation = "https://fastapi-keycloak.code-specialist.com/"
 
 [tool.setuptools.dynamic]
-version = {attr = "fastapi_keycloak.VERSION"}
+version = {attr = ""}
 description = {file = ""}
