@@ -52,15 +52,15 @@ class KeycloakUser(BaseModel):
     enabled: bool
     totp: bool
     emailVerified: bool
-    firstName: Optional[str]
-    lastName: Optional[str]
-    email: Optional[str]
+    firstName: Optional[str] = None
+    lastName: Optional[str] = None
+    email: Optional[str] = None
     disableableCredentialTypes: List[str]
     requiredActions: List[str]
-    realmRoles: Optional[List[str]]
+    realmRoles: Optional[List[str]] = None
     notBefore: int
     access: dict
-    attributes: Optional[dict]
+    attributes: Optional[dict] = None
 
 
 class UsernamePassword(BaseModel):
